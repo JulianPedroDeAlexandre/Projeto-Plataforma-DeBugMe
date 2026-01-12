@@ -1,0 +1,14 @@
+<footer class="footer">
+  © 2026 — Criado por <strong>Julian Pedro De Alexandre</strong>
+</footer>
+
+
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  color: #eee;
+  text-shadow: 0 0 2px #00ffff;
+}

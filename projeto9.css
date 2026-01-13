@@ -2,8 +2,8 @@
 body {
   background-color: #121212;
   color: #eee;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+  font-family:'Courier New', Courier, monospace;
   line-height: 1.2;
   max-width: 800px;
   margin: 40px auto;
@@ -17,15 +17,15 @@ h2 {
   border-radius: 5px;
 }
 
-pre {
+pre{
   overflow-x: auto;
 }
 
 .accordion {
   background-color: #333;
   border-radius: 5px;
-  font-family: 'Courier New', Courier, monospace;
-
+  font-family:'Courier New', Courier, monospace;
+  
   color: #eee;
   cursor: pointer;
   padding: 18px;
@@ -36,8 +36,7 @@ pre {
   transition: 0.4s;
 }
 
-.active,
-.accordion:hover {
+.active, .accordion:hover {
   background-color: #1e1e1e;
 
 }
@@ -52,8 +51,7 @@ pre {
 }
 
 .accordion:after {
-  content: '\02795';
-  /* Unicode character for "plus" sign (+) */
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
   color: #777;
   float: right;
@@ -61,8 +59,7 @@ pre {
 }
 
 .active:after {
-  content: "\2796";
-  /* Unicode character for "minus" sign (-) */
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 .bloco {
@@ -72,24 +69,18 @@ pre {
 /* .explicacao {
   font-style: italic;
 } */
-.bt {
+.bt{
   display: flex;
   justify-content: space-between;
 }
 
-.btanvacar {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.top-buttons {
+.top-buttons{
   display: flex;
   justify-content: space-between;
   max-width: 800px;
 
 }
-
-.circle-buttons {
+.circle-buttons{
   display: flex;
   justify-content: space-between;
   max-width: 800px;
@@ -97,14 +88,13 @@ pre {
   gap: 10px;
 }
 
-.btt {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+.btt{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
-.avancar,
-.voltar {
+.avancar, .voltar {
   background-color: #1e1e1e;
   border: solid 1px #555;
   color: #eee;
@@ -113,7 +103,7 @@ pre {
   cursor: pointer;
 }
 
-.circle {
+.circle{
   height: 25px;
   width: 25px;
   border-radius: 50%;
@@ -130,32 +120,27 @@ pre {
 
 }
 
-.circle.ativo {
+.circle.ativo{
   background-color: #333;
 
 }
-
-.avancar:hover,
-.voltar:hover,
-.circle:hover {
+.avancar:hover, .voltar:hover, .circle:hover {
   background-color: #333;
 }
 
 
-a {
-  text-decoration: none;
-  color: #999292;
+  a{
+    text-decoration: none;
+  color:#999292;
 
 }
-
-.download {
-  font-size: large;
+.download{
+  font-size: large; 
 }
-
-.download:hover {
+.download:hover{
   color: #333;
-
-
+  
+  
 }
 
 .image {
@@ -165,13 +150,12 @@ a {
   justify-content: center;
 }
 
-.image2 {
+.image2{
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-
-.imagedupla {
+.imagedupla{
   max-width: 800px;
   max-height: 800px;
   display: flex;
@@ -194,39 +178,14 @@ button {
   width: 62.67px;
 }
 
-
-.footer {
-  text-align: center;
-  margin-top: 20px;
-  font-family: 'Courier New', monospace;
-  font-size: 14px;
-  color: #eee;
-}
-
-.footer {
-  text-align: center;
-  margin-top: 20px;
-  font-family: 'Courier New', monospace;
-  font-size: 14px;
-  color: #eee;
-}
-
-body.cyberpunk .footer {
-
-  color: #333;
-
-}
-
 @media (max-width: 768px) {
 
   img {
     max-width: 300px;
   }
-
   .btt {
     display: flex;
-    flex-direction: column;
-    /* coluna principal */
+    flex-direction: column; /* coluna principal */
     align-items: center;
   }
 
@@ -240,28 +199,29 @@ body.cyberpunk .footer {
   /* Linha dos círculos */
   .btt .circle-buttons {
     display: flex;
-    flex-wrap: wrap;
-    /* permite quebrar linha se necessário */
+    flex-wrap: wrap; /* permite quebrar linha se necessário */
     gap: 3px;
     width: 100%;
-  }
+   }
 
   .circle {
     height: 20px;
     width: 20px;
     font-size: 10px;
   }
-
-  .btanvacar {
+  .imagedupla{
+    height: auto;
     display: flex;
-    justify-content: flex-end;
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
-  h2 {
+  h2{
     font-size: 17px;
   }
-
+  
 }
 
 
@@ -287,19 +247,18 @@ body.cyberpunk h2 {
   color: #333;
 
 }
-
 /* body.cyberpunk a:hover{
   color: #ccc;
 } */
-body.cyberpunk h1 {
+body.cyberpunk h1{
   color: #333;
 }
 
 body.cyberpunk .accordion {
-  background-color: #eee;
+  background-color:#eee ;
 
   border-radius: 5px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family:'Courier New', Courier, monospace;
   color: #333;
   cursor: pointer;
   padding: 18px;
@@ -310,8 +269,7 @@ body.cyberpunk .accordion {
   transition: 0.4s;
 }
 
-body.cyberpunk .active,
-body.cyberpunk .accordion:hover {
+body.cyberpunk .active, body.cyberpunk .accordion:hover {
   background-color: #ccc;
 
 
@@ -319,7 +277,7 @@ body.cyberpunk .accordion:hover {
 
 body.cyberpunk .panel {
   padding: 0 18px;
-  background-color: #eee;
+  background-color:#eee ;
 
 
   border-radius: 5px;
@@ -330,22 +288,22 @@ body.cyberpunk .panel {
 
 
 body.cyberpunk .avancar,
-body.cyberpunk .voltar,
+body.cyberpunk .voltar, 
 body.cyberpunk .circle {
   background-color: #f7f7f7;
-  border: solid 1px #cccccc;
+  border: solid 1px  #cccccc;
   color: #333;
   /* text-shadow: 0 0 5px #00ffff; */
-
+  
 }
 
 body.cyberpunk .avancar:hover,
-body.cyberpunk .voltar:hover,
+body.cyberpunk .voltar:hover, 
 body.cyberpunk .circle:hover {
-  background-color: #eee;
+  background-color:#eee ;
   /* border-color: #00ffff; */
   /* box-shadow: 0 0 15px #FCFF39; */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 
 
 }
@@ -367,13 +325,8 @@ body.cyberpunk .download:hover {
   box-shadow: 0 0 15px #FCFF39;
 } */
 
-body.cyberpunk .circle.ativo {
-  background-color: #eee;
+body.cyberpunk .circle.ativo{
+  background-color:#eee ;
 
 }
 
-body.cyberpunk .footer {
-
-  color: #333;
-
-}

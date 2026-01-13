@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Exercícios</title>
+ <link rel="stylesheet" href="./projeto11.css">
+ <link rel="icon" type="image/png" href="./img/logo.png">
+</head>
+
+<body>
+  <div class="btt">
+    <div class="circle-buttons" style="margin-bottom: 20px;">
+      <button class="circle"><a href="./index.html">01</a></button>
+      <button class="circle"><a href="./projeto2.html">02</a></button>
+      <button class="circle"><a href="./projeto3.html">03</a></button>
+      <button class="circle"><a href="./projeto4.html">04</a></button>
+      <button class="circle"><a href="./projeto5.html">05</a></button>
+      <button class="circle"><a href="./projeto6.html">06</a></button>
+      <button class="circle"><a href="./projeto7.html">07</a></button>
+      <button class="circle"><a href="./projeto8.html">08</a></button>
+      <button class="circle"><a href="./projeto9.html">09</a></button>
+      <button class="circle"><a href="./projeto10.html">10</a></button>
+      <button class="circle"><a href="./projeto11.html">11</a></button>
+      <button class="circle"><a href="./projeto12.html">12</a></button>
+      <button class="circle"><a href="./projeto13.html">13</a></button>
+      <button class="circle"><a href="./projeto14.html">14</a></button>
+      <button class="circle"><a href="./projeto15.html">15</a></button>
+    </div>
+    <div class="top-buttons">
+      <button class="avancar">💰 20</button>
+      <button class="avancar" onclick="toggleDarkMode()">👓</button>
+    </div>
+  </div>
+
+<h1 class="tit"> Clicker </h1>
+<div class="image">
+  <img src="./img/clickerlogo.PNG" alt="">
+</div>
+  <div class="bloco">
+    <h2>🎯 Objetivo do Projeto</h2>
+    <pre>
+- Clique na imagem para ganhar moedas.
+- Use as moedas para comprar melhorias.
+- Mais moedas por clique.
+- Mais moedas por segundo.
+    </pre>
+    <p class="explicacao">👉 Um jogo simples onde o jogador evolui clicando e comprando upgrades.</p>
+  </div>
+  <div class="bloco">
+    <h2>📃 1. Selecionando os Elementos da Página</h2>
+    <pre>
+      <div class="image">
+        <img src="./img/clicker1.PNG" alt="">
+      </div>
+          </pre>
+          <p class="explicacao">👉 Estas linhas de código usam <strong>document.querySelector( )</strong> para obter referências a quatro elementos HTML essenciais para o jogo: imagem (o alvo do clique), contador (onde o total será exibida), contadorSegundos (onde o o valor por segundos será exibido) e cliques (quanto vale cada clique).</p>
+  </div>
+  
+  <div class="bloco">
+    <h2>🖱 2. Mapeando os botões</h2>
+    <pre>
+<div class="image">
+  <img src="./img/clicker2.PNG" alt="">
+</div>
+    </pre>
+    <p class="explicacao">👉 O código anexa um manipulador de eventos diretamente à propriedade .onclick do elemento HTML com o ID &quot;btc1, btc2...&quot;. Quando este elemento for clicado, a função botaoc1, botaoc1... será executada.</p>
+  </div>
+
+  <div class="bloco">
+    <h2>🌎 3. Variáveis</h2>
+    <pre>
+<div class="image">
+  <img src="./img/clicker3.PNG" alt="">
+</div>
+    </pre>
+    <p class="explicacao">👉 Estas linhas declaram e inicializam com let as variáveis que controlam o estado do jogo clicker: numeroCliques (o ganho por clique, começando em 1), numeroSegundos (ganho por segundo, começando em 0) e moedas (a pontuação total do jogador, começando em 0).</p>
+    <p class="explicacao">👉 Linhas 21, 22 e 23 usam a propriedade .innerText para inicializar a exibição no HTML da pontuação atual, valor por segundos e valor de cada clique.</p>
+  </div>
+  
+  <div class="bloco">
+    <h2>🖼 4. Efeito da imagem</h2>
+    <pre>
+<div class="image">
+  <img src="./img/clicker4.PNG" alt="">
+</div>
+    </pre>
+<p class="explicacao">👉 O método .addEventListener() é usado para anexar um manipulador de eventos à variável imagem (a imagem principal do jogo). O evento que ele está escutando é o "click". Quando a imagem é clicada, a função anônima de callback será executada.</p>
+<p class="explicacao">👉 O valor da variável moedas é incrementado pela quantidade armazenada em numeroCliques (moedas += numeroCliques é o mesmo que moedas = moedas + numeroCliques). Isso adiciona o ganho por clique à pontuação total.</p>
+<p class="explicacao">👉 O conteúdo de texto (innerText) do elemento contador é atualizado para exibir o novo total de moedas (&quot;Moedas: &quot; + moedas).</p>
+<p class="explicacao">👉 A propriedade de estilo CSS transform do elemento clicado (this, que se refere ao elemento imagem) é definida como &quot;scale(95%)&quot;. Isso causa um efeito visual de encolhimento, simulando o "clique" na imagem.</p>
+<p class="explicacao">👉 A função <strong>setTimeout( )</strong> é chamada. Esta função nativa do JavaScript executa um bloco de código (a função de seta () =&gt; { ... }) apenas uma vez após um atraso especificado (o segundo argumento).</p>
+<p class="explicacao">👉 O bloco de código dentro do setTimeout é definido. A propriedade de estilo CSS transform do elemento (this, ainda se referindo à imagem) é definida de volta para &quot;scale(1)&quot; (escala normal).</p>
+<p class="explicacao">👉 O tempo de atraso (delay) do setTimeout é definido como 200 milissegundos. Após este breve período, o código na linha 32 será executado para restaurar a imagem ao seu tamanho normal.</p>
+  </div>
+
+  <div class="bloco">
+    <h2>⌚ 5. setInterval</h2>
+    <pre>
+<div class="image">
+  <img src="./img/clicker5.PNG" alt="">
+</div>
+    </pre>
+<p class="explicacao">👉 A função <strong>setInterval( )</strong> é chamada. Esta função nativa do JavaScript executa repetidamente um bloco de código (a função anônima de callback) em intervalos de tempo fixos e contínuos (o segundo argumento). Este é o mecanismo do jogo para ganhos por segundo.</p>
+<p class="explicacao">👉 O valor da variável moedas é incrementado pela quantidade armazenada em numeroSegundos. Como esta linha está dentro de um setInterval que roda a cada 1000ms (1 segundo), ela adiciona o ganho passivo à pontuação a cada segundo.</p>
+<p class="explicacao">👉 O conteúdo de texto (innerText) do elemento contadorSegundos é atualizado. Ele exibe a string &quot;Segundos: &quot; concatenada com o valor de numeroSegundos, mostrando ao jogador o valor de ganho por segundo.</p>
+<p class="explicacao">👉 O conteúdo de texto (innerText) do elemento contador é atualizado para exibir o novo total de moedas (&quot;Moedas: &quot; + moedas), refletindo o ganho passivo de moedas que acabou de ocorrer.</p>
+<p class="explicacao">👉 O tempo de intervalo (interval) do setInterval é definido como 1000 milissegundos (ou seja, 1 segundo). Isso significa que as linhas 39 a 41 serão executadas a cada segundo.</p>
+  </div>
+
+  <div class="bloco">
+    <h2>💰 6. Upgrades</h2>
+    <pre>
+<div class="image">
+  <img src="./img/clicker6.PNG" alt="">
+</div>
+    </pre>
+    <p class="explicacao">👉 O código define duas funções principais de melhoria, ambas chamadas por botões de compra. A função botaoc1 (ligada ao botão "btc1") gerencia a compra de um upgrade de clique: ela verifica se o jogador tem 50 moedas, subtrai o custo, incrementa a variável numeroCliques em 1, e atualiza o display de moedas e o display de ganho por clique. Já a função botaos1 (ligada ao botão "bts1") gerencia o upgrade de ganho passivo: ela verifica se o jogador tem 100 moedas, subtrai o custo, incrementa a variável numeroSegundos em 1 (aumentando o ganho por segundo), e atualiza o display de moedas e o display de ganho por segundo.</p>
+  </div>
+
+  <div class="bloco">
+    <h2>💰 7. Outros upgrades</h2>
+
+    <p class="explicacao" style="margin-bottom: 30px">👉 Você já entendeu como os botões dos upgrades funcionam. Tivemos o exemplo do botaoc1 (upgrade de clique) e do botaos1 (upgrade por segundo). Seu próximo passo é fazer o restante dos upgrades: botaoc2 até botaoc5 e botaos2 até botaos5. Lembre-se que cada função deve ter um custo crescente e, se o custo for pago, deve incrementar a variável de ganho correta (numeroCliques ou numeroSegundos) e atualizar os placares na tela. O nome da função deve sempre coincidir com o que foi atribuído ao .onclick no HTML.</p>
+  </div>
+  <div class="btt">
+    <div class="circle-buttons">
+      <button class="circle"><a href="./index.html">01</a></button>
+      <button class="circle"><a href="./projeto2.html">02</a></button>
+      <button class="circle"><a href="./projeto3.html">03</a></button>
+      <button class="circle"><a href="./projeto4.html">04</a></button>
+      <button class="circle"><a href="./projeto5.html">05</a></button>
+      <button class="circle"><a href="./projeto6.html">06</a></button>
+      <button class="circle"><a href="./projeto7.html">07</a></button>
+      <button class="circle"><a href="./projeto8.html">08</a></button>
+      <button class="circle"><a href="./projeto9.html">09</a></button>
+      <button class="circle"><a href="./projeto10.html">10</a></button>
+      <button class="circle"><a href="./projeto11.html">11</a></button>
+      <button class="circle"><a href="./projeto12.html">12</a></button>
+      <button class="circle"><a href="./projeto13.html">13</a></button>
+      <button class="circle"><a href="./projeto14.html">14</a></button>
+      <button class="circle"><a href="./projeto15.html">15</a></button>
+    </div>
+    <div class="top-buttons" style="margin-top: 20px;">
+      <button class="voltar">
+      <a href="./projeto10.html">Voltar</a>
+      </button>
+
+      <button class="avancar">
+        <a href="./projeto12.html">Avançar</a>
+      </button>
+    </div> 
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>

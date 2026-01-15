@@ -213,7 +213,7 @@ body.cyberpunk .footer {
   .btt .circle-buttons {
     display: flex;
     flex-wrap: wrap; /* permite quebrar linha se necessário */
-    gap: 3px;
+    gap: 2.5px;
     width: 100%;
    }
 

@@ -1,168 +1,182 @@
-# Plataforma DeBugMe 
+# Plataforma DeBugMe
 
-Este repositório reúne os projetos e exercícios da **Plataforma DeBugMe**, organizados em páginas numeradas de **01 a 15**. Cada página apresenta um objetivo claro, materiais de apoio e instruções práticas para construir e entender soluções em **HTML, CSS e JavaScript**.
-
---- 
-
-## Estrutura do Projeto 
-
-### Arquitetura 
-
-- Cada exercício está em um arquivo HTML separado (`index.html, projeto2.html` até `projeto15.html`). 
-- Isso permite que cada página seja independente, mas siga uma mesma identidade visual e lógica de navegação. 
-
-### Componentes comuns 
-
-- **Cabeçalho** com título e botões de navegação. 
-- **Área central** com o conteúdo do exercício (explicação + código + prática). 
-- **Rodapé** com links para avançar ou voltar entre páginas. 
-
---- 
-
-## Troca de Páginas 
-- **Botões numerados:** No topo e rodapé há uma sequência de botões (1 a 15). Cada botão leva diretamente ao exercício correspondente (`projetoX.html`). 
-
-- **Botões de navegação rápida:** Além dos números, há botões de **“Voltar”** e **“Avançar”** que permitem seguir a ordem sugerida sem precisar voltar ao índice. 
+Este repositório reúne os projetos e exercícios da **Plataforma DeBugMe**, organizados em páginas numeradas de **01 a 15**.  
+Cada página apresenta um objetivo claro, materiais de apoio e instruções práticas para construir e entender soluções em **HTML, CSS e JavaScript**.
 
 ---
 
- ## Tema Dark/Light 
-
- - **Alternância de tema:** 
- Implementada com `classList.toggle('modewhite')` no elemento `<body>`.
-
-- **Tema padrão:** escuro. 
-- **Tema alternativo:** claro (ativado ao clicar no botão de tema). 
+## 📑 Índice
+1. [Estrutura do Projeto](#estrutura-do-projeto)  
+2. [Troca de Páginas](#troca-de-páginas)  
+3. [Tema Dark/Light](#tema-darklight)  
+4. [Marcação dos Exercícios](#marcação-dos-exercícios)  
+5. [Funcionalidades Extras](#funcionalidades-extras)  
+6. [Visão Geral dos Projetos (1–15)](#visão-geral-dos-projetos-1–15)  
+7. [Créditos](#créditos)
 
 ---
+
+## Estrutura do Projeto
+
+### Arquitetura
+- Cada exercício está em um arquivo HTML separado (`index.html`, `projeto2.html` … `projeto15.html`).  
+- Isso mantém cada página independente, mas seguindo a mesma identidade visual e lógica de navegação.
+
+### Componentes Comuns
+- **Cabeçalho** com título e botões de navegação.  
+- **Conteúdo central** com explicação + área prática + código.  
+- **Rodapé** com botões de avanço/retorno.
+
 ---
 
-Marcação do Exercício
-Botões de seleção:  
-Cada exercício tem um botão que pode ser marcado para indicar conclusão.
-Ao clicar, o botão muda de estilo (ex.: cor diferente ou ícone de check).
+## Troca de Páginas
+- **Botões numerados:** No topo e rodapé, botões de **1 a 15** levam diretamente ao exercício correspondente.  
+- **Navegação rápida:** Botões **“Voltar”** e **“Avançar”** permitem seguir a ordem natural dos projetos sem abrir o índice.
 
-Persistência opcional:  
-Em alguns exercícios mais avançados (como o Relógio de Ponto), há uso de localStorage.
-Esse mesmo recurso pode ser usado para salvar quais exercícios já foram marcados como concluídos, mesmo após recarregar a página.
+---
 
-Funcionalidades Extras
-Explicação + prática:  
-Cada página traz uma explicação teórica e logo abaixo o código para testar.
+## Tema Dark/Light
 
-Consistência visual:  
-Todos os exercícios compartilham o mesmo layout, o que facilita a navegação e dá a sensação de plataforma única.
+- Alternância feita com `classList.toggle('modewhite')` no elemento `<body>`.  
+- **Tema padrão:** escuro.  
+- **Tema alternativo:** claro, ativado ao clicar no botão de tema.
 
-Visão Geral dos Projetos (1–15)
-Projeto 1 — Introdução ao DOM
-Objetivo: primeiros passos com HTML e manipulação básica de elementos.
+---
 
-Conceitos: estrutura HTML, getElementById, innerText, uso de eventos de clique com função normal, com addEventListener e com addEventListener usando arrow function.
+## Marcação dos Exercícios
 
-Desafio: comparar os três tipos de função e entender suas diferenças na prática.
+### Botões de Seleção
+Cada exercício possui um botão que pode ser marcado para indicar conclusão.  
+Ao clicar, o botão muda de estilo (cor, ícone ou destaque visual).
 
-Projeto 2 — Simulação de Cadastro e Login
-Objetivo: cadastrar nome e idade e validar login comparando com dados salvos.
+### Persistência (Opcional)
+Em alguns projetos, como o **Relógio de Ponto**, é usado `localStorage`.  
+Esse mesmo recurso pode marcar automaticamente quais exercícios já foram concluídos, mesmo após atualizar a página.
 
-Conceitos: getElementById, .value, .innerText, onclick, if/else.
+---
 
-Desafio: substituir onclick por addEventListener com arrow functions.
+## Funcionalidades Extras
 
-Projeto 3 — Calculadora
-Objetivo: criar calculadora funcional.
+### Explicação + Prática
+Cada página traz:
+- uma explicação teórica inicial;  
+- o código correspondente;  
+- área de teste para o aluno praticar.
 
-Conceitos: eventos de clique, variáveis globais, funções para cada botão, uso de eval() para calcular expressões.
+### Consistência Visual
+Todos os 15 exercícios seguem o mesmo layout e estilo, reforçando a sensação de plataforma organizada e unificada.
 
-Desafio: refatorar para reduzir repetição de código.
+---
 
-Projeto 4 — Cadastro de Pessoas com createElement
-Objetivo: CRUD simples em tabela usando criação e remoção de elementos.
+## Visão Geral dos Projetos (1–15)
 
-Conceitos: createElement, appendChild, deleteRow, loops for, if.
+### Projeto 1 — Introdução ao DOM
+**Objetivo:** primeiros passos com HTML e manipulação de elementos.  
+**Conceitos:** `getElementById`, `innerText`, eventos (onclick, addEventListener, arrow function).  
+**Desafio:** comparar diferentes formas de declarar funções.
 
-Desafio: implementar edição de registros além da exclusão.
+---
 
-Projeto 5 — Cálculo de CPF
-Objetivo: calcular dígitos verificadores de um CPF.
+### Projeto 2 — Simulação de Cadastro e Login
+**Objetivo:** cadastrar nome e idade e validar login.  
+**Conceitos:** `.value`, if/else, mensagens na tela.  
+**Desafio:** trocar onclick por `addEventListener` com arrow functions.
 
-Conceitos: split, for, multiplicação por pesos, join, slice, template literals.
+---
 
-Desafio: validar CPF completo e mostrar mensagens de erro.
+### Projeto 3 — Calculadora
+**Objetivo:** criar calculadora funcional.  
+**Conceitos:** eventos de clique, variáveis globais, `eval()`.  
+**Desafio:** refatorar o código e remover repetição.
 
-Projeto 6 — Carrossel
-Objetivo: criar carrossel de imagens funcional.
+---
 
-Conceitos: querySelectorAll, forEach, addEventListener('click'), classList.add/remove.
+### Projeto 4 — Cadastro de Pessoas com createElement
+**Objetivo:** CRUD simples em tabela.  
+**Conceitos:** `createElement`, `appendChild`, `deleteRow`, loops.  
+**Desafio:** implementar edição de registros.
 
-Desafio: adicionar autoplay com setInterval.
+---
 
-Projeto 7 — Card Pessoal
-Objetivo: criar card com dados pessoais e ícones interativos.
+### Projeto 5 — Cálculo de CPF
+**Objetivo:** calcular dígitos verificadores.  
+**Conceitos:** `split`, loops, multiplicação por pesos, `slice`, template literals.  
+**Desafio:** validar CPF completo e mensagens de erro.
 
-Conceitos: Flexbox, ícones com boxicons, mouseenter, innerText, integração com API randomuser.me..
+---
 
-Desafio: permitir atualização automática dos dados via API.
+### Projeto 6 — Carrossel
+**Objetivo:** carrossel funcional.  
+**Conceitos:** `querySelectorAll`, `classList.add/remove`.  
+**Desafio:** adicionar autoplay com `setInterval`.
 
-Projeto 8 — Pokédex API
-Objetivo: consumir PokeAPI e exibir pokémons em cards.
+---
 
-Conceitos: fetch, async/await, for...of, map, join, appendChild.
+### Projeto 7 — Card Pessoal
+**Objetivo:** criar card interativo.  
+**Conceitos:** Flexbox, boxicons, eventos `mouseenter`, API `randomuser.me`.  
+**Desafio:** atualizar dados automaticamente via API.
 
-Desafio: implementar busca por nome ou número do pokémon.
+---
 
-Projeto 9 — Calculadora Refatorada
-Objetivo: melhorar código da calculadora anterior.
+### Projeto 8 — Pokédex API
+**Objetivo:** consumir PokeAPI.  
+**Conceitos:** fetch, async/await, loops, montagem de cards.  
+**Desafio:** implementar busca por nome/ID.
 
-Conceitos: querySelectorAll, forEach, addEventListener, arrow functions, refatoração para menos linhas.
+---
 
-Desafio: adicionar histórico de cálculos.
+### Projeto 9 — Calculadora Refatorada
+**Objetivo:** melhorar a calculadora.  
+**Conceitos:** queries, `forEach`, arrow functions, clean code.  
+**Desafio:** adicionar histórico de cálculos.
 
-Projeto 10 — Cadastro de Pessoas com Objetos
-Objetivo: cadastrar pessoas e exibir em cards.
+---
 
-Conceitos: objetos literais, arrays, push, forEach, preventDefault, reset.
+### Projeto 10 — Cadastro de Pessoas com Objetos
+**Objetivo:** cadastrar pessoas em cards.  
+**Conceitos:** objetos literais, arrays, `push`, `forEach`.  
+**Desafio:** implementar edição e exclusão.
 
-Desafio: implementar exclusão e edição de pessoas cadastradas.
+---
 
-Projeto 11 — Clicker (Jogo de cliques)
-Objetivo: ganhar moedas clicando e comprar upgrades.
+### Projeto 11 — Clicker (Jogo de Cliques)
+**Objetivo:** ganhar moedas e comprar upgrades.  
+**Conceitos:** estados, `setInterval`, eventos, lógica de jogo.  
+**Desafio:** implementar upgrades crescentes e placares.
 
-Conceitos: querySelector, addEventListener, setInterval, variáveis de estado.
+---
 
-Desafio: implementar upgrades adicionais com custos crescentes e placares.
+### Projeto 12 — Carrossel X-Men
+**Objetivo:** trocar imagem e descrição ao passar o mouse.  
+**Conceitos:** `querySelectorAll`, `mouseenter`, animações simples.  
+**Desafio:** adicionar novos personagens e transições.
 
-Projeto 12 — Carrossel X-Men
-Objetivo: trocar imagem e descrição ao passar mouse sobre personagens.
+---
 
-Conceitos: querySelectorAll, mouseenter, classList.
+### Projeto 13 — Git/GitHub
+**Objetivo:** introdução ao Git.  
+**Conceitos:** `git init`, `git add`, `git commit`, `git push`.  
+**Desafio:** versionar um projeto completo e criar branches.
 
-Desafio: adicionar novos personagens e animações de transição.
+---
 
-Projeto 13 — Git/GitHub
-Objetivo: aprender versionamento e comandos básicos.
+### Projeto 14 — Alternância de Tema
+**Objetivo:** tema claro/escuro.  
+**Conceitos:** `classList.toggle`, CSS escopado.  
+**Desafio:** aplicar alternância em três projetos.
 
-Conceitos: git init, git add, git commit, git push.
+---
 
-Desafio: versionar um projeto completo e criar branches.
+### Projeto 15 — Relógio de Ponto
+**Objetivo:** registrar horários usando localStorage.  
+**Conceitos:** classe `Ponto`, JSON.stringify/parse, loops.  
+**Desafio:** formatar registros e permitir exportação dos dados.
 
-Projeto 14 — Alternância de Tema
-Objetivo: alternar entre tema claro e escuro.
+---
 
-Conceitos: classList.toggle, CSS escopado.
-
-Desafio: aplicar alternância de tema em três projetos diferentes.
-
-Projeto 15 — Relógio de Ponto
-Objetivo: registrar horários e salvar no localStorage.
-
-Conceitos: classe Ponto, JSON.stringify/parse, loops forEach e for...in.
-
-Desafio: formatar registros, evitar duplicações e permitir exportação dos dados.
-
-Créditos
-Autor: Julian Pedro De Alexandre
-
-Ano: 2025
-Ultima atualização: 2026
-
-Fonte: Plataforma DeBugMe
+## Créditos
+**Autor:** Julian Pedro De Alexandre  
+**Ano:** 2025  
+**Última atualização:** 2026  
+**Fonte:** Plataforma DeBugMe

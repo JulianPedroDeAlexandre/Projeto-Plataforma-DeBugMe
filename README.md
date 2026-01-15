@@ -8,7 +8,7 @@ Este repositório reúne os projetos e exercícios da **Plataforma DeBugMe**, or
 
 ### Arquitetura 
 
-- Cada exercício está em um arquivo HTML separado (`projeto1.html` até `projeto15.html`). 
+- Cada exercício está em um arquivo HTML separado (`index.html, projeto2.html` até `projeto15.html`). 
 - Isso permite que cada página seja independente, mas siga uma mesma identidade visual e lógica de navegação. 
 
 ### Componentes comuns 
@@ -33,6 +33,9 @@ Este repositório reúne os projetos e exercícios da **Plataforma DeBugMe**, or
 
 - **Tema padrão:** escuro. 
 - **Tema alternativo:** claro (ativado ao clicar no botão de tema). 
+
+---
+---
 
 Marcação do Exercício
 Botões de seleção:  
